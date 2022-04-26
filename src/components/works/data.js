@@ -17,7 +17,7 @@ let works=[
                     'href': 'https://next-shop-test1.vercel.app/',
                 'img': 'https://next-shop-rouge.vercel.app',
                 'title': 'Next фронт для интернет-магазина',
-                'description': 'За 1 день написанный фронт для простого интернет-магазина',
+                'description': 'За один день написанный фронт для простого интернет-магазина',
                 'skills': {'next': 'dark','react': 'primary', 'redux': 'info'}
                 },
                 {
