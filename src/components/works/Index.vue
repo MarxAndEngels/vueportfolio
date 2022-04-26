@@ -1,18 +1,20 @@
 <template lang="">
     <div>
       <h4 class='mt-5'>Некоторые работы</h4>
+      <p>(Чтоб что-то нормальное задеплоить нужны деньги получается... Или компутер работающий...)</p>
       <button class='mb-5 btn btn-dark' @click="filterWorksAll()">Все</button>
       <button class='mb-5 btn btn-success' @click="filterWorks('nuxt')">Nuxt</button>
             <button class='mb-5 btn btn-danger' @click="filterWorks('laravel')">Laravel</button>
       <button class='mb-5 btn btn-success' @click="filterWorks('vue')">Vue</button>
-      <button class='mb-5 btn btn-success' @click="filterWorks('vue-router')">Vue-router</button>
       <button class='mb-5 btn btn-success' @click="filterWorks('vuex')">Vuex</button>
+      <button class='mb-5 btn btn-dark' @click="filterWorks('next')">Next</button>
+      <button class='mb-5 btn btn-primary' @click="filterWorks('react')">React</button>
+      <button class='mb-5 btn btn-info' @click="filterWorks('redux')">Redux-toolkit</button>
       <button class='mb-5 btn btn-dark' @click="filterWorks('jwt')">Jwt</button>
-       <button class='mb-5 btn btn-info' @click="filterWorks('openCart')">OpenCart</button>
       <button class='mb-5 btn btn-warning' @click="filterWorks('js')">JS</button>
       <button class='mb-5 btn btn-primary' @click="filterWorks('css')">Совсем верстка</button>
       <button class='mb-5 btn btn-info' @click="filterWorks('bootstrap')">Bootstrap</button>
-      <div v-if='works' class='row'>
+      <div v-if='works' class='row shine' :class="{ active: shine }">
             <div v-for='(el,key) of works' :key='key' class='col-lg-4'>
                 <a :href="el.href" target="_blank">
                 <div>
@@ -48,7 +50,8 @@ export default {
     data(){
         return{
             standartWorks: null,
-            works:null
+            works:null,
+            shine:false
         }
     },
     beforeMount() {
@@ -63,11 +66,19 @@ export default {
            let obj = localStorage.getItem('works');
            obj = JSON.parse(obj);
           this.works = obj.filter(el=>{ return el.skills.hasOwnProperty(name) });
+         this.shineHandler();
        },
        filterWorksAll(){
            let obj = localStorage.getItem('works');
            obj = JSON.parse(obj);
            this.works = obj;
+           this.shineHandler();
+       },
+       shineHandler(){
+           this.shine = !this.shine;
+           setTimeout(()=>{
+                this.shine = !this.shine; 
+           },300)
        }
     }
 }
@@ -113,5 +124,16 @@ export default {
    button{
        
        margin: 0 4px;
+   }
+   .shine.active{
+       animation: opacity 0.3s ease-in-out;
+   }
+   @keyframes opacity {
+       from{
+         opacity: 0;
+       }
+       to{
+         opacity: 1;
+       }
    }
 </style>

@@ -237,6 +237,17 @@ let dataCode = [
     }
     findUnique([132,32,43,1234,32],[132,32,43132,231,1]);`
 },
+ {
+    'id': 92433,
+    'question': `Необходимо написать функцию которая удаляет элемент по его id`,
+    'answer':`    
+    function removeItem(arr, index){
+        let newarr = arr.findIndex(el=>{return el.id === index});
+        arr.splice(newarr,1);
+        return arr;
+    }
+    console.log(removeItem([{'id': 1, 'name':'Alex'},{'id': 2, 'name':'Kate'},{'id': 3, 'name':'Piter'}], 2));`
+},
  
 ];
 export default dataCode;

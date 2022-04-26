@@ -4,7 +4,7 @@ let works=[
                 'img': 'https://sun9-44.userapi.com/impg/AneMebaTnMxRMqMnqJtYFdt7JJRWlxhOHJIYdw/68ndc6gCJdM.jpg?size=1280x720&quality=96&sign=8ab9df7ea6c21e865c2402b21ba73a0f&type=album',
                 'title': 'Nuxt+Laravel+JWT (frontend git)',
                 'description': 'Работа с авторизацией JWT, ссылка на гит (frontend git)',
-                'skills': {'nuxt': 'success','vue': 'success','vue-router': 'success','vuex': 'success','jwt': 'dark' }
+                'skills': {'nuxt': 'success','vue': 'success','vuex': 'success','jwt': 'dark' }
                 },
                 {
                     'href': 'https://github.com/MarxAndEngels/nuxt-laravel-jwt2',
@@ -14,32 +14,25 @@ let works=[
                 'skills': {'laravel': 'danger','jwt': 'dark'}
                 },
                 {
-                    'href': 'https://github.com/MarxAndEngels/myportfolio',
-                'img': 'https://sun9-59.userapi.com/impg/f80042TBRTNzTv7f3dsxcFvoVS0sa0T4OD53VA/lT1udpcx2BY.jpg?size=1280x720&quality=96&sign=9c7d126c7e474eb1571165232b85cad7&type=album',
-                'title': 'Vue+Laravel+JWT portfolio (git)',
-                'description': 'Работа с разными возможностями в vue,laravel,jwt',
-                'skills': {'vue': 'success','vue-router': 'success','laravel': 'danger','jwt': 'dark'}
-                },
-                {
-                    'href': 'http://htmlbook.ru/html/a/target',
-                'img': 'https://sun9-46.userapi.com/impg/4xPWUtbCkc_nZeTDx08hYGo2gjEHWRHQlNXw-Q/1lWgTfDFkvM.jpg?size=1280x720&quality=96&sign=c0431a8042d61fd7ee8c170312e103a3&type=album',
-                'title': 'Vue+Laravel+JWT (git)',
-                'description': 'Работа с авторизацией JWT в Vue+Laravel',
-                'skills': {'vue': 'success','vue-router': 'success','laravel': 'danger','jwt': 'dark'}
-                },
-                {
-                    'href': 'http://htmlbook.ru/html/a/target',
-                'img': 'https://sun9-46.userapi.com/impg/4xPWUtbCkc_nZeTDx08hYGo2gjEHWRHQlNXw-Q/1lWgTfDFkvM.jpg?size=1280x720&quality=96&sign=c0431a8042d61fd7ee8c170312e103a3&type=album',
-                'title': 'OpenCart',
-                'description': 'Работа со стандартной формой OpenCart и подключением тестовой системы оплаты fondy',
-                'skills': {'openCart': 'info'}
+                    'href': 'https://next-shop-test1.vercel.app/',
+                'img': 'https://sun9-38.userapi.com/s/v1/ig2/zYg-pBewaN_CyTbtshPc-Oydvhx3mLGNmc1GLs84q5YGs--TqOOI_-j4v2040_pqsJcyOcYgTS6ixLsNbn4T6gUX.jpg?size=1551x737&quality=96&type=album',
+                'title': 'Next фронт для интернет-магазина',
+                'description': 'За 1 день написанный фронт для простого интернет-магазина',
+                'skills': {'next': 'dark','react': 'primary', 'redux': 'info'}
                 },
                 {
                     'href': 'http://u92002uo.beget.tech/products/index',
                 'img': 'https://sun9-16.userapi.com/impg/Izub0TxAVziCox0wn_TVJdiF4KPxlYI-zOsP4w/p10HWE8QTUg.jpg?size=1280x720&quality=96&sign=e8d76721071067b73b3c6860f9aabbd7&type=album',
                 'title': 'Интернет-магазин',
                 'description': 'Работа с магазином на чистом Laravel, более простая версия, которая может быть',
-                'skills': {'bootstrap':'info','laravel': 'danger'}
+                'skills': {'laravel': 'danger'}
+                },
+                {
+                    'href': 'https://github.com/MarxAndEngels/myportfolio',
+                'img': 'https://sun9-59.userapi.com/impg/f80042TBRTNzTv7f3dsxcFvoVS0sa0T4OD53VA/lT1udpcx2BY.jpg?size=1280x720&quality=96&sign=9c7d126c7e474eb1571165232b85cad7&type=album',
+                'title': 'Страница комментариев + portfolio (git)',
+                'description': 'Работа с разными возможностями в vue,laravel,jwt',
+                'skills': {'vue': 'success','laravel': 'danger','jwt': 'dark'}
                 },
                 {
                     'href': 'https://marxandengels.github.io/dr',

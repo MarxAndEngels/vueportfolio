@@ -41,6 +41,7 @@ export default {
     let obj = dataCode.filter((el,k)=>{return k <= this.paginate });
     this.codeObj = obj;
     this.scrollMain();
+
   },
     data(){
         return{

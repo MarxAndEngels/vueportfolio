@@ -90,7 +90,7 @@ export default {
       width: 70px;
       height: 70px;
       margin: 20px 0;
-            filter: grayscale(70%);
+            filter: grayscale(80%);
             transition-duration: .7s;
                        margin-top:36px;
     }

@@ -25,7 +25,7 @@
         <div style='margin-top:10px'> Исходные данные телефона: {{ valv }}</div>
     <input hidden type="text" name="phone" ref='number' class="form-control" id="exampleInput3" aria-describedby="emailHelp">
   <label for="exampleFormControlInput3" class="form-label mt-4">Ваше сообщение</label>
-    <textarea name="message"  class="form-control" id="exampleFormControlTextarea3" rows="6" v-model='textar'></textarea>
+    <textarea name="message"  class="form-control" id="exampleFormControlTextarea3" rows="6" v-model='textar' placeholder="Отправь мне свое сообщение"></textarea>
     <input type="submit" value="Отправить сообщение" class='btn btn-success mt-4'>
   </form>
   </div>
