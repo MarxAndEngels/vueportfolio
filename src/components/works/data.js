@@ -15,7 +15,7 @@ let works=[
                 },
                 {
                     'href': 'https://next-shop-test1.vercel.app/',
-                'img': 'https://sun9-38.userapi.com/s/v1/ig2/zYg-pBewaN_CyTbtshPc-Oydvhx3mLGNmc1GLs84q5YGs--TqOOI_-j4v2040_pqsJcyOcYgTS6ixLsNbn4T6gUX.jpg?size=1551x737&quality=96&type=album',
+                'img': 'https://next-shop-rouge.vercel.app',
                 'title': 'Next фронт для интернет-магазина',
                 'description': 'За 1 день написанный фронт для простого интернет-магазина',
                 'skills': {'next': 'dark','react': 'primary', 'redux': 'info'}
