@@ -5,7 +5,7 @@
             
              <div class='vnav-opt' :class='{active: isNavbar}'>
                  <div> <router-link :to="{ name: 'skills.index' }" ><i class="fa fa-cog" aria-hidden="true"></i>  <span> Skills </span></router-link> </div>
-                 <div> <router-link :to="{ name: 'works.index' }" ><i class="fa fa-briefcase" aria-hidden="true"></i>  <span> Works </span></router-link> </div>
+                 <div> <router-link :to="{ name: 'works.index' }" ><i class="fa fa-briefcase" aria-hidden="true"></i>  <span>Some cases </span></router-link> </div>
                   <div> <router-link :to="{ name: 'about.index' }" ><i class="fa fa-user-circle-o" aria-hidden="true"></i>  <span> About me </span></router-link> </div>
                  <div> <router-link :to="{ name: 'send.index' }" > <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Send offer</span> </router-link></div>
                  <div> <router-link :to="{ name: 'code.js.index' }" > <i class="fa fa-code" aria-hidden="true"></i> <span>Code</span> </router-link></div>
@@ -30,7 +30,7 @@ export default {
     ],
 
     mounted(){
-    
+
     },
     methods:{
         togglNavbar(){

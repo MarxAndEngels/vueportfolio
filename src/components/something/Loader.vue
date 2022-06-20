@@ -20,6 +20,7 @@ export default {
  border-radius: 50%;
  border-left-color:#0D47A1;
  animation: loader 1.3s linear infinite;
+ z-index: 1111111;
 }
 @keyframes loader {
  100% {

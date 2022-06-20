@@ -1,20 +1,25 @@
 <template lang="">
     <div>
-      <h4 class='mt-5'>Некоторые работы</h4>
+        <Loader v-if='shine'/>
+      <h4 class='mt-5'>Некоторые работы({{ count }})</h4>
       <p>(Чтоб что-то нормальное задеплоить нужны деньги получается... Или компутер работающий...)</p>
-      <button class='mb-5 btn btn-dark' @click="filterWorksAll()">Все</button>
-      <button class='mb-5 btn btn-success' @click="filterWorks('nuxt')">Nuxt</button>
-            <button class='mb-5 btn btn-danger' @click="filterWorks('laravel')">Laravel</button>
-      <button class='mb-5 btn btn-success' @click="filterWorks('vue')">Vue</button>
-      <button class='mb-5 btn btn-success' @click="filterWorks('vuex')">Vuex</button>
-      <button class='mb-5 btn btn-dark' @click="filterWorks('next')">Next</button>
-      <button class='mb-5 btn btn-primary' @click="filterWorks('react')">React</button>
-      <button class='mb-5 btn btn-info' @click="filterWorks('redux')">Redux-toolkit</button>
-      <button class='mb-5 btn btn-dark' @click="filterWorks('jwt')">Jwt</button>
-      <button class='mb-5 btn btn-warning' @click="filterWorks('js')">JS</button>
-      <button class='mb-5 btn btn-primary' @click="filterWorks('css')">Совсем верстка</button>
-      <button class='mb-5 btn btn-info' @click="filterWorks('bootstrap')">Bootstrap</button>
-      <div v-if='works' class='row shine' :class="{ active: shine }">
+      <button class='mb-1 btn btn-dark' @click="filterWorksAll()">Все</button>
+      <button class='mb-1 btn btn-danger' @click="filterNotGit('git')">Отображаемое</button>
+          <button class='mb-1 btn btn-dark' @click="filterWorks('git')">Git</button>
+      <button class='mb-1 btn btn-success' @click="filterWorks('nuxt')">Nuxt</button>
+        <button class='mb-1 btn btn-dark' @click="filterWorks('next')">Next</button>
+            <button class='mb-1 btn btn-danger' @click="filterWorks('laravel')">Laravel</button>
+      <button class='mb-1 btn btn-success' @click="filterWorks('vue')">Vue</button>
+      <button class='mb-1 btn btn-success' @click="filterWorks('vuex')">Vuex</button>
+      <button class='mb-1 btn btn-primary' @click="filterWorks('react')">React</button>
+      <button class='mb-1 btn btn-info' @click="filterWorks('redux')">Redux-toolkit</button>
+      <button class='mb-1 btn btn-primary' @click="filterWorks('react-native')">React Native</button>
+      <button class='mb-1 btn btn-dark' @click="filterWorks('jwt')">Jwt</button>
+      <button class='mb-1 btn btn-warning' @click="filterWorks('js')">JS</button>
+      <button class='mb-1 btn btn-primary' @click="filterWorks('css')">Совсем верстка</button>
+      <button class='mb-1 btn btn-info' @click="filterWorks('bootstrap')">Bootstrap</button>
+
+      <div v-if='works' class='row shine mt-5' :class="{ active: shine }">
             <div v-for='(el,key) of works' :key='key' class='col-lg-4'>
                 <a :href="el.href" target="_blank">
                 <div>
@@ -45,14 +50,19 @@
 </template>
 <script>
 import works from './data.js';
+import Loader from '../something/Loader';
 export default {
     name:'Index',
     data(){
         return{
             standartWorks: null,
             works:null,
-            shine:false
+            shine:false,
+            count: 0,
         }
+    },
+    components:{
+     Loader
     },
     beforeMount() {
         this.works = works;  
@@ -60,19 +70,29 @@ export default {
     mounted(){
     //  this.works = works;
      localStorage.setItem('works', JSON.stringify(this.works));
+     this.filterWorksAll();
     },
     methods:{
        filterWorks(name){
            let obj = localStorage.getItem('works');
            obj = JSON.parse(obj);
           this.works = obj.filter(el=>{ return el.skills.hasOwnProperty(name) });
+          this.count = this.works.length;
          this.shineHandler();
        },
        filterWorksAll(){
            let obj = localStorage.getItem('works');
            obj = JSON.parse(obj);
            this.works = obj;
+            this.count = this.works.length;
            this.shineHandler();
+       },
+       filterNotGit(name){
+               let obj = localStorage.getItem('works');
+           obj = JSON.parse(obj);
+          this.works = obj.filter(el=>{ return !el.skills.hasOwnProperty(name) });
+          this.count = this.works.length;
+         this.shineHandler();
        },
        shineHandler(){
            this.shine = !this.shine;
@@ -100,7 +120,7 @@ export default {
          left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-        background-color: rgb(0, 0, 0,.5);
+        background-color: rgb(0, 0, 0,.8);
         width: 100%;
         height: 100%;
           max-height: 220px;

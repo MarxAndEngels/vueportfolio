@@ -17,6 +17,11 @@ import 'vue-tel-input/dist/vue-tel-input.css';
 Vue.use(VueTelInput, [{allCountries: ['ru']}]);
 //phone
 
+//axios
+window.axios = require('axios');
+Vue.use(axios)
+//axios
+
 new Vue({
   render: h => h(App),
   router

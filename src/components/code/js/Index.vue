@@ -10,7 +10,7 @@
      <div class='code__text mb-2 mt-2'>
                {{ el.question }}
           </div>
-          <button class='btn btn-success' :class="{'btn-danger':numberComponent == el.id}" @click='show(el.id, $event)'> {{ numberComponent == el.id ? 'Ой, закрой меня, тут вынос мозга 🤯': 'Открыть решение' }}</button>
+          <button class='btn btn-primary' :class="{'btn-danger':numberComponent == el.id}" @click='show(el.id, $event)'> {{ numberComponent == el.id ? 'Ой, закрой меня, тут вынос мозга 🤯': 'Открыть решение' }}</button>
                  </div>  
                    <transition name='fade'>        
     <code-highlight language="javascript" class='code__panel' v-if='numberComponent == el.id'>

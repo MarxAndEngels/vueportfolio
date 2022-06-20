@@ -4,14 +4,22 @@ let works=[
                 'img': 'https://sun9-44.userapi.com/impg/AneMebaTnMxRMqMnqJtYFdt7JJRWlxhOHJIYdw/68ndc6gCJdM.jpg?size=1280x720&quality=96&sign=8ab9df7ea6c21e865c2402b21ba73a0f&type=album',
                 'title': 'Nuxt+Laravel+JWT (frontend git)',
                 'description': 'Работа с авторизацией JWT, ссылка на гит (frontend git)',
-                'skills': {'nuxt': 'success','vue': 'success','vuex': 'success','jwt': 'dark' }
+                'skills': {'nuxt': 'success','vue': 'success','jwt': 'dark','git':'yes' }
                 },
                 {
                     'href': 'https://github.com/MarxAndEngels/nuxt-laravel-jwt2',
                 'img': 'https://sun9-44.userapi.com/impg/AneMebaTnMxRMqMnqJtYFdt7JJRWlxhOHJIYdw/68ndc6gCJdM.jpg?size=1280x720&quality=96&sign=8ab9df7ea6c21e865c2402b21ba73a0f&type=album',
                 'title': 'Nuxt+Laravel+JWT (backend git)',
                 'description': 'Работа с авторизацией JWT, ссылка на гит (backend git)',
-                'skills': {'laravel': 'danger','jwt': 'dark'}
+                'skills': {'laravel': 'danger','jwt': 'dark','git':'yes'}
+                },
+
+                {
+                    'href': 'http://u92002uo.beget.tech/products/index',
+                'img': 'https://sun9-16.userapi.com/impg/Izub0TxAVziCox0wn_TVJdiF4KPxlYI-zOsP4w/p10HWE8QTUg.jpg?size=1280x720&quality=96&sign=e8d76721071067b73b3c6860f9aabbd7&type=album',
+                'title': 'Интернет-магазин',
+                'description': 'Работа с магазином на чистом Laravel, более простая версия, которая может быть',
+                'skills': {'laravel': 'danger'}
                 },
                 {
                     'href': 'https://next-shop-rouge.vercel.app',
@@ -21,18 +29,39 @@ let works=[
                 'skills': {'next': 'dark','react': 'primary', 'redux': 'info'}
                 },
                 {
-                    'href': 'http://u92002uo.beget.tech/products/index',
-                'img': 'https://sun9-16.userapi.com/impg/Izub0TxAVziCox0wn_TVJdiF4KPxlYI-zOsP4w/p10HWE8QTUg.jpg?size=1280x720&quality=96&sign=e8d76721071067b73b3c6860f9aabbd7&type=album',
-                'title': 'Интернет-магазин',
-                'description': 'Работа с магазином на чистом Laravel, более простая версия, которая может быть',
-                'skills': {'laravel': 'danger'}
+                    'href': 'https://expo.dev/@admin1232131243fd/happy-birthday',
+                'img': 'https://sun9-72.userapi.com/s/v1/ig2/lneeQEl15o4sOY3AsuCtGPI5kBPnTz1S2z6EWOhRjJnZPTCEHTFJJYHjRtTyeef0mhFd7oWQYlhYGLay93FzLM96.jpg?size=274x271&quality=96&type=album',
+                'title': 'Симулиция казино на React Native',
+                'description': 'Для открытия приложения нужно скачать приложение Expo Go и отсканировать этот QR-код любым способом',
+                'skills': {'react-native': 'info'}
                 },
                 {
                     'href': 'https://github.com/MarxAndEngels/myportfolio',
                 'img': 'https://sun9-59.userapi.com/impg/f80042TBRTNzTv7f3dsxcFvoVS0sa0T4OD53VA/lT1udpcx2BY.jpg?size=1280x720&quality=96&sign=9c7d126c7e474eb1571165232b85cad7&type=album',
                 'title': 'Страница комментариев + portfolio (git)',
-                'description': 'Работа с разными возможностями в vue,laravel,jwt',
-                'skills': {'vue': 'success','laravel': 'danger','jwt': 'dark'}
+                'description': 'Работа со связями в laravel, с загрузой и выгрузой файлов в SPA. И подключение jwt',
+                'skills': {'vue': 'success','laravel': 'danger','jwt': 'dark','git':'yes'}
+                },
+                {
+                    'href': 'https://github.com/MarxAndEngels/crudsLaravel',
+                'img': 'https://sun9-72.userapi.com/s/v1/ig2/euDSnyxSUNllFYbuDew_Ek_OjJx2rgrUquB7b8j9w8S-JGPKxdoVhZKWz5QQRKhW9WkU3Z6n35iWIUX9b7p2l9o-.jpg?size=1345x741&quality=96&type=album',
+                'title': 'Блог',
+                'description': 'С crud постов,тегов,категорий (git)',
+                'skills': {'laravel': 'danger','git':'yes'}
+                },
+                {
+                    'href': 'https://funny-test-orpin.vercel.app/',
+                'img': 'https://sun9-north.userapi.com/sun9-86/s/v1/ig2/01Lnn92B--Xkdfj4kPqC4cAWHQSYoCuYhkaNXyfc-UMjfL6ahdnwEFYiKema_FOWpAllqZNGuOBnZDnrNi2vPssy.jpg?size=1539x747&quality=96&type=album',
+                'title': 'Очень развлекательный тест',
+                'description': 'С репостом в социальные сети',
+                'skills': {'nuxt': 'success','vue': 'success'}
+                },
+                {
+                    'href': 'https://github.com/MarxAndEngels/someVueLaravel',
+                'img': 'https://sun9-west.userapi.com/sun9-1/s/v1/ig2/dHPpTtojcX_BQ-sHR-R2VmIuehOFR3K2nYipNzZWm7NQCjiVgJVBf4am-I9277Tbwpg5LcIzjQVrfcWfNClFFhEV.jpg?size=579x397&quality=96&type=album',
+                'title': 'Работа с возможностями vue+laravel (git)',
+                'description': 'Пагинация, cruds, слайдер, табы ',
+                'skills': {'vue': 'success','vuex': 'success','laravel': 'danger','git':'yes'}
                 },
                 {
                     'href': 'https://marxandengels.github.io/dr',
@@ -62,6 +91,7 @@ let works=[
                 'description': 'Работа с версткой, без методологии БЭМ. Сейчас, конечно, буду стараться придерживаться БЭМ',
                 'skills': {'html': 'danger','css': 'primary'}
                 },
+             
 
             ];
             export default works;
