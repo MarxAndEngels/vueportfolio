@@ -63,11 +63,11 @@
         <a href="https://t.me/qwerty_maks" target="_blank"> <img class='src__telegram' src="https://sun9-west.userapi.com/sun9-8/s/v1/ig2/gipIDyxrVlkETEwhVmriujDeUSYfwaJy-h3wrEdWYbUN2KOr80Lwa_KUgJ6Jjv5k3nI7_aY-GoA0_2W5_9FUty1r.jpg?size=833x1600&quality=95&type=album" alt=""> </a>
          
          <br>
-         <div class='about__main_text mt-3'> <a target='__blank' href="https://oplata.qiwi.com/form?invoiceUid=2d7609e8-eb0b-4349-9ed4-84b449c327ed"><i class="fa fa-rub" aria-hidden="true"></i> Подарить мне денег на QIWI</a> </div>
+         <!-- <div class='about__main_text mt-3'> <a target='__blank' href="https://oplata.qiwi.com/form?invoiceUid=2d7609e8-eb0b-4349-9ed4-84b449c327ed"><i class="fa fa-rub" aria-hidden="true"></i> Подарить мне денег на QIWI</a> </div> -->
         <!-- https://oplata.qiwi.com/form?invoiceUid=2d7609e8-eb0b-4349-9ed4-84b449c327ed -->
-<a target='__blank' href="https://oplata.qiwi.com/form?invoiceUid=2d7609e8-eb0b-4349-9ed4-84b449c327ed">
+<!-- <a target='__blank' href="https://oplata.qiwi.com/form?invoiceUid=2d7609e8-eb0b-4349-9ed4-84b449c327ed">
        <Qrcode/>
-       </a>
+       </a> -->
         </div>
         <div>
 <br>
