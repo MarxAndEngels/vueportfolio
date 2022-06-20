@@ -114,6 +114,7 @@ export default {
     }
     .content-techology:hover{
        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+       transform: translate3d(-1px,-1px ,0);
     }
     .content-techology:hover .image-techology{
             filter: grayscale(0%);

@@ -59,9 +59,22 @@
          <div class='about__main_text mt-3'> <a href="mailto:gladvalakaspwnz11@gmail.com?body=Здравствуйте,"> <i class="fa fa-at" aria-hidden="true"></i> <strong> Почта:</strong> gladvalakaspwnz11@gmail.com </a> </div>
          <div class='about__main_text mt-3'> <strong>Мои ссылки:</strong> </div>
          <a href="https://t.me/qwerty_maks" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-        <div class='about__main_text mt-3'> QR-код </div>
-        <a href="https://t.me/qwerty_maks" target="_blank"> <img class='src__telegram' src="https://sun9-west.userapi.com/sun9-8/s/v1/ig2/gipIDyxrVlkETEwhVmriujDeUSYfwaJy-h3wrEdWYbUN2KOr80Lwa_KUgJ6Jjv5k3nI7_aY-GoA0_2W5_9FUty1r.jpg?size=833x1600&quality=95&type=album" alt=""> </a>
-         
+         <a href="https://wa.me/79200230922" target="_blank" class='whatsApp'><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <center>
+        <div class='wrapper__qrcode'>
+        <div class='about__main_text mt-3'> <strong> QR-код</strong> Телеграм</div>
+        <br>
+        <a  href="https://t.me/qwerty_maks" target="_blank"> <img class='src__telegram' src="@/assets/about/photo_2022-06-20_17-29-26.jpg" alt=""> </a>
+       
+        <div class='about__main_text mt-5'>  <strong> QR-код</strong> WhatsApp</div>
+           <br>
+        <a  href="https://wa.me/79200230922" target="_blank"> <img class='src__whatsapp' src="@/assets/about/photo_2022-06-20_17-28-33.jpg" alt=""> </a>
+        
+        <div class='about__main_text mt-5'>  <strong> QR-код</strong> Viber</div>
+           <br>
+        <a  href="viber://add?number=79867468922"> <img class='src__viber' src="@/assets/about/photo_2022-06-20_17-28-29.jpg" alt=""> </a>
+         </div>
+         </center>
          <br>
          <!-- <div class='about__main_text mt-3'> <a target='__blank' href="https://oplata.qiwi.com/form?invoiceUid=2d7609e8-eb0b-4349-9ed4-84b449c327ed"><i class="fa fa-rub" aria-hidden="true"></i> Подарить мне денег на QIWI</a> </div> -->
         <!-- https://oplata.qiwi.com/form?invoiceUid=2d7609e8-eb0b-4349-9ed4-84b449c327ed -->
@@ -207,6 +220,12 @@ export default {
          /* filter: hue-rotate(45deg); */
      /* offset-rotate: 9deg; */
 }
+
+.wrapper__qrcode{
+    width:100%;
+    height: 400px;
+    overflow: scroll;
+}
 .about__picture_money_sm_big{
       cursor: pointer;
         position: absolute;
@@ -239,6 +258,11 @@ export default {
         transform: rotate(131deg);
         offset-path: path('M50 59C40 105 43 66 2 2L41 16C50 9.33334 67.6 -2.8 66 2C64 8 60 13 50 59Z');
      animation: followpath 18s linear infinite;
+}
+
+.whatsApp{
+    margin-left: 12px;
+    color: rgb(44, 176, 44);
 }
 
 @keyframes followpath {
@@ -387,6 +411,22 @@ export default {
         height: 400px;
         border-radius: 12px;
     }
+    .src__whatsapp{
+        border: 10px solid rgb(129, 221, 129);
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    }
+    .src__viber{
+        border: 10px solid rgb(110, 107, 167);
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        border-radius: 10%;
+    }
     
 
 
@@ -406,6 +446,10 @@ export default {
       .form-select{
         margin-top: 15px;
       }
+
+         .src__telegram{
+        max-width: 220px;
+    }
     }
     @media ( max-width: 400px){
         .about__picture_money,.about__picture_money_left, .about__picture_money_sm_big {
@@ -423,6 +467,30 @@ export default {
       .about__main_message_small{
         right: 104px;
     }
+
+        .about__picture_money,.about__picture_money_left, .about__picture_money_sm_big {
+       top: 50px;
+    left: 40px;
+    max-width: 60px;
+}
+.about__picture_money_ul_big{
+     top: 40px;
+    left: 40px;
+    max-width: 64px;
+}
     }
+
+  /* Для всех скроллбаров */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+    background-color: #5075da;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 8px;
+     background-color: #adb3c2;
+}
+
     
 </style>

@@ -8,7 +8,7 @@
         <br>
         <router-link :to="{ name: 'new.index' }">new</router-link>
         <br> -->
-    
+         <Modal/>
               <router-view></router-view>
   </div>
   </div>
@@ -16,10 +16,11 @@
 </template>
 <script>
 import Navbar from './components/something/Navbar';
+import Modal from './components/something/Modal';
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar, Modal
   },
 
   data(){
@@ -32,7 +33,7 @@ export default {
 
   mounted(){
     // this.sendIp();
-    this.checkUser()
+    // this.checkUser()
   },
   data(){
         return{

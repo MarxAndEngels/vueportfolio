@@ -1,9 +1,9 @@
 <template lang="">
     <div class='mt-5'>
         <h1>Алгоритмические задачки</h1>
-        <h5>Когда чем-то новым занимаешься, из головы начинают стираться старые вещи, так что эта страничка может помочь вспомнить:</h5>
-        <router-link :to="{ name: 'code.js.index' }" > <img class='icon_select' src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt=""></router-link> 
-       <router-link :to="{ name: 'code.php.index' }" > <img class='icon_select active' src="https://avatars.mds.yandex.net/i?id=bf67c2bdef8211ceacb82980e77819e7-5879784-images-thumbs&n=13&exp=1" alt=""></router-link> 
+ <h5>Когда чем-то новым занимаешься, из головы начинают стираться старые вещи, так что эта страничка может помочь вспомнить многое:</h5>
+        <router-link :to="{ name: 'code.js.index' }" > <img class='icon_select' src="@/assets/about/free-icon-js-5968292.png" alt=""></router-link> 
+       <router-link :to="{ name: 'code.php.index' }" > <img class='icon_select active' src="@/assets/about/free-icon-php-5968332.png" alt=""></router-link> 
         <div v-if='codeObj' class='row'>
             <div v-for='(el,index) in codeObj' :key='index' class="col-lg-12 code">
      <div class='code__qusetion'>

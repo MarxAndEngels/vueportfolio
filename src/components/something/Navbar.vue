@@ -5,11 +5,13 @@
             
              <div class='vnav-opt' :class='{active: isNavbar}'>
                  <div> <router-link :to="{ name: 'skills.index' }" ><i class="fa fa-cog" aria-hidden="true"></i>  <span> Skills </span></router-link> </div>
-                 <div> <router-link :to="{ name: 'works.index' }" ><i class="fa fa-briefcase" aria-hidden="true"></i>  <span>Some cases </span></router-link> </div>
+                 <div> <router-link :to="{ name: 'works.index' }" ><i class="fa fa-briefcase" aria-hidden="true"></i>  <span> Some cases </span></router-link> </div>
                   <div> <router-link :to="{ name: 'about.index' }" ><i class="fa fa-user-circle-o" aria-hidden="true"></i>  <span> About me </span></router-link> </div>
-                 <div> <router-link :to="{ name: 'send.index' }" > <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Send offer</span> </router-link></div>
-                 <div> <router-link :to="{ name: 'code.js.index' }" > <i class="fa fa-code" aria-hidden="true"></i> <span>Code</span> </router-link></div>
-                 <div> <a href="https://t.me/qwerty_maks" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i> <span>Мой телеграм</span></a></div>
+                 <div> <router-link :to="{ name: 'send.index' }" > <i class="fa fa-envelope-o" aria-hidden="true"></i> <span> Send offer</span> </router-link></div>
+                 <div> <router-link :to="{ name: 'code.js.index' }" > <i class="fa fa-code" aria-hidden="true"></i> <span> Code</span> </router-link></div>
+                 <div> <a href="https://t.me/qwerty_maks" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i> <span> Мой Telegram</span></a></div>
+                 <div> <a href="https://wa.me/79200230922" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> <span> Мой WhatsApp</span></a></div>
+                 <div> <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-qrcode" aria-hidden="true"></i> <span> Мессенджеры</span></a></div>
              </div>
        </div>
     </div>
