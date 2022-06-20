@@ -88,7 +88,7 @@ datetime += + currentdate.getHours() + ":"
         'text': `${datetime}` 
       })
 
-      this.geolocation();
+      // this.geolocation();
         },
             geolocation(){
                   const successCallback = (position)=>{
