@@ -3,21 +3,24 @@
         <Loader v-if='shine'/>
       <h4 class='mt-5'>Некоторые работы({{ count }})</h4>
       <p>(Чтоб что-то нормальное задеплоить нужны деньги получается... Или компутер работающий...)</p>
-      <button class='mb-1 btn btn-dark' @click="filterWorksAll()">Все</button>
-      <button class='mb-1 btn btn-danger' @click="filterNotGit('git')">Отображаемое</button>
-          <button class='mb-1 btn btn-dark' @click="filterWorks('git')">Git</button>
-      <button class='mb-1 btn btn-success' @click="filterWorks('nuxt')">Nuxt</button>
-        <button class='mb-1 btn btn-dark' @click="filterWorks('next')">Next</button>
-            <button class='mb-1 btn btn-danger' @click="filterWorks('laravel')">Laravel</button>
-      <button class='mb-1 btn btn-success' @click="filterWorks('vue')">Vue</button>
-      <button class='mb-1 btn btn-success' @click="filterWorks('vuex')">Vuex</button>
-      <button class='mb-1 btn btn-primary' @click="filterWorks('react')">React</button>
-      <button class='mb-1 btn btn-info' @click="filterWorks('redux')">Redux-toolkit</button>
-      <button class='mb-1 btn btn-primary' @click="filterWorks('react-native')">React Native</button>
-      <button class='mb-1 btn btn-dark' @click="filterWorks('jwt')">Jwt</button>
-      <button class='mb-1 btn btn-warning' @click="filterWorks('js')">JS</button>
-      <button class='mb-1 btn btn-primary' @click="filterWorks('css')">Совсем верстка</button>
-      <button class='mb-1 btn btn-info' @click="filterWorks('bootstrap')">Bootstrap</button>
+      <h5 class='mb-3'>Выбери здесь что-то 😊:</h5>
+      <div class='wrapper-butt'>
+      <button class='mb-2 btn btn-dark b p' @click="filterWorksAll($event)">Все</button>
+      <button class='mb-2 btn btn-danger b' @click="filterNotGit('git',$event)">Отображаемое</button>
+          <button class='mb-2 btn btn-dark b' @click="filterWorks('git',$event)">Git</button>
+      <button class='mb-2 btn btn-success b' @click="filterWorks('nuxt',$event)">Nuxt</button>
+        <button class='mb-2 btn btn-dark b' @click="filterWorks('next',$event)">Next</button>
+            <button class='mb-2 btn btn-danger b' @click="filterWorks('laravel',$event)">Laravel</button>
+      <button class='mb-2 btn btn-success b' @click="filterWorks('vue',$event)">Vue</button>
+      <button class='mb-2 btn btn-success b' @click="filterWorks('vuex',$event)">Vuex</button>
+      <button class='mb-2 btn btn-primary b' @click="filterWorks('react',$event)">React</button>
+      <button class='mb-2 btn btn-info b' @click="filterWorks('redux',$event)">Redux-toolkit</button>
+      <button class='mb-2 btn btn-primary b' @click="filterWorks('react-native',$event)">React Native</button>
+      <button class='mb-2 btn btn-dark b' @click="filterWorks('jwt',$event)">Jwt</button>
+      <button class='mb-2 btn btn-warning b' @click="filterWorks('js',$event)">JS</button>
+      <button class='mb-2 btn btn-primary b' @click="filterWorks('css',$event)">Совсем верстка</button>
+      <button class='mb-2 btn btn-info b' @click="filterWorks('bootstrap',$event)">Bootstrap</button>
+       </div>
 
       <div v-if='works' class='row shine mt-5' :class="{ active: shine }">
             <div v-for='(el,key) of works' :key='key' class='col-lg-4'>
@@ -59,6 +62,7 @@ export default {
             works:null,
             shine:false,
             count: 0,
+            target: null
         }
     },
     components:{
@@ -73,32 +77,50 @@ export default {
      this.filterWorksAll();
     },
     methods:{
-       filterWorks(name){
+       filterWorks(name,e){
            let obj = localStorage.getItem('works');
            obj = JSON.parse(obj);
           this.works = obj.filter(el=>{ return el.skills.hasOwnProperty(name) });
           this.count = this.works.length;
          this.shineHandler();
+
+         this.target =e.target
+         this.filterButtons();
        },
-       filterWorksAll(){
+       filterWorksAll(e){
            let obj = localStorage.getItem('works');
            obj = JSON.parse(obj);
            this.works = obj;
             this.count = this.works.length;
            this.shineHandler();
+
+          this.target =e.target
+         this.filterButtons();
        },
-       filterNotGit(name){
+       filterNotGit(name,e){
                let obj = localStorage.getItem('works');
            obj = JSON.parse(obj);
           this.works = obj.filter(el=>{ return !el.skills.hasOwnProperty(name) });
           this.count = this.works.length;
          this.shineHandler();
+
+         this.target =e.target
+         this.filterButtons();
        },
        shineHandler(){
            this.shine = !this.shine;
            setTimeout(()=>{
                 this.shine = !this.shine; 
            },300)
+       },
+       filterButtons(){
+        let buttons = document.querySelectorAll('.b');
+        for(let el of buttons){
+            if(el.classList.contains('p')){
+              el.classList.remove('p');
+            }
+        }
+          this.target.classList.add('p');
        }
     }
 }
@@ -145,6 +167,10 @@ export default {
        
        margin: 0 4px;
    }
+   .wrapper-works{
+    background-color: rgb(137, 136, 136);
+    padding: 4px 50px;
+   }
    .shine.active{
        animation: opacity 0.3s ease-in-out;
    }
@@ -155,5 +181,19 @@ export default {
        to{
          opacity: 1;
        }
+   }
+   .btn{
+    border-radius: 20px;
+    padding: 4px 20px;
+    transition: transform ease-in-out 0.3s;
+   }
+   .b{
+     opacity: 0.7;
+   }
+   .btn:hover{
+    transform: translateY(-2px);
+   }
+   .p{
+          opacity: 1;
    }
 </style>

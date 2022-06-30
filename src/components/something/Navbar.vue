@@ -1,7 +1,19 @@
 <template lang="">
     <div>
        <div class='vnav' :class='{active: isNavbar}'>
-           <div class='vnav-burg' @click='togglNavbar' :class='{active: isNavbar}'> <span>It'sMyPortfolio :3</span><i class="fa fa-bars"></i></div>
+           <div class='vnav-burg' @click='togglNavbar' :class='{active: isNavbar}'> <span>It'sMyPortfolio :3 </span>
+           <i class="fa fa-bars"></i>
+           <center>
+
+<!-- <div id="nav-icon3">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div> -->
+
+           </center>
+           </div>
             
              <div class='vnav-opt' :class='{active: isNavbar}'>
                  <div> <router-link :to="{ name: 'skills.index' }" ><i class="fa fa-cog" aria-hidden="true"></i>  <span> Skills </span></router-link> </div>
@@ -39,7 +51,12 @@ export default {
           this.isNavbar = !this.isNavbar;
 
           this.$emit('stateNavbar', this.isNavbar);
-        }
+        //   this.openMenu();
+        },
+        // openMenu(){
+        //     let menu = document.querySelector('#nav-icon3');
+        //     menu.classList.toggle('open');
+        // }
     }
 }
 </script>
@@ -58,7 +75,7 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      transition-duration: 0.5s;
+      transition-duration: 0.6s;
   }
   .vnav.active{
       max-width:70px;
@@ -118,5 +135,57 @@ export default {
        transition-duration: 1s;
       text-align: center;
   }
+/* 
+#nav-icon3 {
+    width: 26px;
+    height: 22px;
+    position: relative;
+    margin: 10px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+} 
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: snow;
+    border-radius: 9px;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .75s ease-in-out;
+        opacity: 1;
+}
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+}
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 10px;
+}
+#nav-icon3 span:nth-child(4) {
+    top: 20px;
+}
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+    opacity: 0.05;
+}
+#nav-icon3.open span:nth-child(2) {
+    transform: rotate(45deg);
+        opacity: 0.05;
+}
+#nav-icon3.open span:nth-child(3) {
+    transform: rotate(-45deg);
+        opacity: 0.05;
+}
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+    opacity: 0.05;
+} */
 
 </style>
