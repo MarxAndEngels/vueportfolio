@@ -9,6 +9,7 @@
         <router-link :to="{ name: 'new.index' }">new</router-link>
         <br> -->
          <Modal/>
+         <Phone/>
               <router-view></router-view>
   </div>
   </div>
@@ -17,10 +18,11 @@
 <script>
 import Navbar from './components/something/Navbar';
 import Modal from './components/something/Modal';
+import Phone from './components/something/Phone.vue';
 export default {
   name: 'App',
   components: {
-    Navbar, Modal
+    Navbar, Modal,Phone
   },
 
   data(){

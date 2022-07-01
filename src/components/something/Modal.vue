@@ -14,9 +14,18 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <center>
         <div class='about__main_text mt-3'> <strong>Мои ссылки:</strong> </div>
          <a class='about__main_text-icon' href="https://t.me/qwerty_maks" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
          <a style='font-size: 34px' href="https://wa.me/79200230922" target="_blank" class='whatsApp'><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+
+         </center> 
+             <center>
+               <br>
+        <router-link :to="{ name: 'send.index' }" > <button data-bs-toggle="modal" data-bs-target="#exampleModal" class='btn btn-outline-success'><span class='circle'></span> Написать мне онлайн</button> </router-link>
+        <!-- <div class='about__main_text mt-3'> Написать мне онлайн </div> -->
+        </center> 
+        <br>
         <center>
         <div class='wrapper__qrcode'>
         <div class='about__main_text mt-3'> <strong> QR-код</strong> Телеграм</div>
@@ -47,7 +56,16 @@ export default {
 }
 </script>
 <style scoped>
-
+.circle{
+      width: 12px;
+      height: 12px;
+      border:2px solid #232323;
+      background: rgb(10, 133, 10);
+      /* background: #5FCDA4; */
+      display: inline-block;
+      border-radius: 50%;
+      transform: translateY(1px);
+}
 .whatsApp{
     margin-left: 12px;
     color: rgb(44, 176, 44);
