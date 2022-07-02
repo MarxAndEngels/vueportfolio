@@ -30,7 +30,7 @@ export default {
     .wrapper__phone{
         cursor: pointer;
         position: fixed;
-        background: #7B95F2;
+        background: #232323;
         bottom: 10px;
         left: 52%;
         width: 100%;
@@ -53,11 +53,12 @@ export default {
     .fa-phone{
         margin-left: 10px;
           transform: rotate(90deg);
+             color: snow;
     }
     .phone-text{
         display: inline-block;
         margin-left: 12px;
-        /* color: snow; */
+        color: snow;
     }
     .phone-text.active{
         display: none;

@@ -10,7 +10,9 @@
         <br> -->
          <Modal/>
          <Phone/>
-              <router-view></router-view>
+           <div class='wrapper__router'>
+                 <router-view></router-view>
+           </div>
   </div>
   </div>
   </div>
@@ -131,4 +133,7 @@ datetime += + currentdate.getHours() + ":"
     width:calc(100% - 80px);
 }
     
+    .wrapper__router{
+      overflow: hidden;
+    }
 </style>
