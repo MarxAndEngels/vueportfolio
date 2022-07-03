@@ -7,7 +7,8 @@
         <div class="row g-5">
        <div class='col-lg-4 col-md-6 content-techology' v-for='skill of skills' :key='skill.id' v-if='skill.category_id == category.id'>
 
-      <center> <img :src="skill.image" class='image-techology' :alt="skill.name"></center>
+      <center> <img :src="`/static/skills/${skill.image}.webp`" class='image-techology' :alt="skill.name"></center>
+
       <center> <div>
         <h5 class="name-techology">
     

@@ -11,6 +11,10 @@
          <Modal/>
          <Phone/>
            <div class='wrapper__router'>
+            <!-- <div class="fdfsdf" v-for='el of [1,2]' :key='el'>
+              <div> {{ el }} </div>
+              <img :src="`/static/${el}.jpg?webp`">
+            </div> -->
                  <router-view></router-view>
            </div>
   </div>
@@ -32,6 +36,7 @@ export default {
         dataCity: null,
        dataIpAddress: null,
        dataCountryName: null,
+       arr: [1,2]
   }
   },
 
@@ -39,6 +44,7 @@ export default {
     // this.sendIp();
     // this.checkUser()
   },
+  
   data(){
         return{
             token: null,
@@ -53,6 +59,10 @@ export default {
         stateNavbarFucn(state){
              this.stateNavbar = state
         },
+
+        getImgUrl(pic) {
+  return require('static/' + pic + '.jpg');
+      },
 
         sendIp(){
     //отправка данных клиента

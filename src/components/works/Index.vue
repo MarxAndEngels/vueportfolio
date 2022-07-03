@@ -24,12 +24,14 @@
 
       <div v-if='works' class='row shine mt-5' :class="{ active: shine }">
             <div v-for='(el,key) of works' :key='key' class='col-lg-4'>
-                <a :href="el.href" target="_blank">
+                <a :href="el.href" target="_blank" style='text-decoration: none;'>
                 <div>
                     <div class='works__relative'>
-                    <img class='works__img mb-5' :src="el.img" alt="">
+                        <!-- <img :src="`/static/skills/${skill.image}.webp`" class='image-techology' :alt="skill.name"> -->
+                    <img class='works__img mb-5' :src="`/static/works/${el.img}.webp`" alt="">
                       
-                       <div class='works__options'>
+                                <!-- <div class='works__title'>312312</div> -->
+                       <div class='works__options m'>
                            <div><p>{{ el.title }}</p></div>
                            <div><p><span>{{ el.description }}</span></p></div>
                            <div class='d-flex justify-content-center'>
@@ -44,7 +46,11 @@
                            </div>
                     </div>
                     </div>
-                   
+                       <div class="mobile-text">
+                             <div>  <p class='mobile-text-p'> {{ el.title }}</p></div>
+                                  <center><div class='line'></div></center>
+                           <div><p> <span class='mobile-text-s'>{{ el.description }}</span></p></div>
+                           </div>
                 </div>
                 </a>
             </div>
@@ -156,6 +162,7 @@ export default {
      transition-duration: 0.8s;
       border-radius: 10px;
     }
+  
     .works__options div span {
          font-size: 15px;
     }
@@ -167,6 +174,7 @@ export default {
        
        margin: 0 4px;
    }
+
    .wrapper-works{
     background-color: rgb(137, 136, 136);
     padding: 4px 50px;
@@ -188,12 +196,56 @@ export default {
     transition: transform ease-in-out 0.3s;
    }
    .b{
-     opacity: 0.7;
+     opacity: 0.6;
    }
    .btn:hover{
     transform: translateY(-2px);
    }
    .p{
           opacity: 1;
+   }
+   .mobile-text{
+    color: black;
+      margin-bottom:66px;
+      margin-top: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: none;
+   }
+   .mobile-text-p{
+  pointer-events: none;
+  text-decoration: none;
+  border-bottom: 1px solid snow;
+  font-weight: 600;
+    
+   }
+   .mobile-text-s{
+  pointer-events: none;
+  text-decoration: none;
+  border-bottom: 1px solid snow;
+    
+   }
+   .line{
+    margin: -4px 0 12px 0;
+       display: block;
+       width: 56px;
+       height: 6px;
+       background: #7682df;
+       border-radius: 10px;
+   }
+   @media(max-width: 560px){
+    .works__img{
+             max-height: 100%;
+             margin: 0 !important;
+    }
+     .works__options{
+        padding: 0;
+     }
+    .m{
+        display: none;
+    }
+    .mobile-text{
+        display: block;
+    }
    }
 </style>
