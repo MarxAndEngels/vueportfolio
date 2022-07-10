@@ -36,6 +36,13 @@ let works=[
                 'skills': {'react-native': 'info'}
                 },
                 {
+                    'href': 'https://ui-component.vercel.app/',
+                'img': 'ui',
+                'title': 'Основные ui компоненты для сайта',
+                'description': 'Кнопочки,чекбоксы, селекты и т.д.',
+                'skills': {'nuxt': 'success','vue': 'success','html': 'danger','css': 'primary' }
+                },
+                {
                     'href': 'https://github.com/MarxAndEngels/myportfolio',
                 'img': 'spa',
                 'title': 'Страница комментариев + portfolio (git)',
