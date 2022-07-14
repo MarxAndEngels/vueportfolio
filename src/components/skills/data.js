@@ -135,7 +135,7 @@ let skills = [
     'category_id': '9',
     'image': 'gq',
     'name': 'GRAPHQL',
-    'hidden_content':'Ничего'},
+    'hidden_content':'Для фронтенда'},
     {'id':'21',
     'category_id': '10',
     'image': 'docker',
