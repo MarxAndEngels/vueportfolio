@@ -16,6 +16,8 @@ let categories =[
     {'id':'8',
     'title': 'Базы данных'},
     {'id':'9',
+    'title': 'Язык запросов'},
+    {'id':'10',
     'title': 'Развертывание приложений'},
 ];
 let skills = [
@@ -131,6 +133,11 @@ let skills = [
     'hidden_content':'Ничего'},
     {'id':'20',
     'category_id': '9',
+    'image': 'gq',
+    'name': 'GRAPHQL',
+    'hidden_content':'Ничего'},
+    {'id':'21',
+    'category_id': '10',
     'image': 'docker',
     'name': 'DOCKER',
     'hidden_content':'Ничего'},
