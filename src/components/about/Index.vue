@@ -106,6 +106,7 @@ export default {
             stick: '|',
             moneyFly: true,
             age: 0,
+            ageModify: 0,
             information: true,
             formatAge: 'лет',
             selectedStyle: '', 
@@ -135,6 +136,7 @@ export default {
         diff = Math.abs(Math.floor(diff));
 
         var years = Math.floor(diff/(365*24*60*60));
+        this.ageModify = years;
 
         let ageInterval = setInterval( ()=>{
             this.age++ ;
@@ -158,7 +160,8 @@ export default {
            },300-(Math.random()*50))
        },
        ageToString(){
-	     let count = this.age % 100;
+        setTimeout
+	     let count = this.ageModify % 100;
 	     if (count >= 5 && count <= 20) {
 		  this.formatAge = 'лет';
 	     } else {
