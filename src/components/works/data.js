@@ -43,6 +43,27 @@ let works=[
                 'skills': {'nuxt': 'success','vue': 'success','html': 'danger','css': 'primary' }
                 },
                 {
+                    'href': 'https://xn----7sb6agkabkedhjf1k.xn--p1ai/',
+                'img': 'puls',
+                'title': 'Интернет-магазин',
+                'description': 'Работа в команде для фронтендерской части',
+                'skills': {'nuxt': 'success','vue': 'success' }
+                },
+                {
+                    'href': 'https://proxy-cars.ru/',
+                'img': 'proxy',
+                'title': 'Интернет-магазин',
+                'description': 'Работа в команде для фронтендерской части',
+                'skills': {'nuxt': 'success','vue': 'success','vuex': 'success' }
+                },
+                {
+                    'href': 'https://carro.ru/',
+                'img': 'carro',
+                'title': 'Интернет-магазин',
+                'description': 'Работа в команде для фронтендерской части',
+                'skills': {'nuxt': 'success','vue': 'success','vuex': 'success' }
+                },
+                {
                     'href': 'https://github.com/MarxAndEngels/myportfolio',
                 'img': 'spa',
                 'title': 'Страница комментариев + portfolio (git)',
