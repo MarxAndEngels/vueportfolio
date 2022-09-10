@@ -1,5 +1,12 @@
 let works=[
                 {
+                    'href': 'http://chat-1337-friends.herokuapp.com/chatify',
+                'img': 'chat',
+                'title': 'Чат laravel',
+                'description': 'Пакет для ларавель, с которым можно сделать что-то великое',
+                'skills': {'laravel': 'danger'}
+                },
+                {
                     'href': 'https://github.com/MarxAndEngels/nuxt-laravel-jwt',
                 'img': 'f',
                 'title': 'Nuxt+Laravel+JWT (frontend git)',
