@@ -50,6 +50,13 @@ let works=[
                 'skills': {'nuxt': 'success','vue': 'success','html': 'danger','css': 'primary' }
                 },
                 {
+                    'href': 'https://autoexpert.moscow/',
+                'img': 'expert',
+                'title': 'Интернет-магазин',
+                'description': 'Работа в команде для фронтендерской части',
+                'skills': {'nuxt': 'success','vue': 'success' }
+                },
+                {
                     'href': 'https://xn----7sb6agkabkedhjf1k.xn--p1ai/',
                 'img': 'puls',
                 'title': 'Интернет-магазин',
