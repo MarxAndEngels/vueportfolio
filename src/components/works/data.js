@@ -6,20 +6,7 @@ let works=[
                 'description': 'Пакет для ларавель, с которым можно сделать что-то великое',
                 'skills': {'laravel': 'danger'}
                 },
-                {
-                    'href': 'https://github.com/MarxAndEngels/nuxt-laravel-jwt',
-                'img': 'f',
-                'title': 'Nuxt+Laravel+JWT (frontend git)',
-                'description': 'Работа с авторизацией JWT, ссылка на гит (frontend git)',
-                'skills': {'nuxt': 'success','vue': 'success','jwt': 'dark','git':'yes' }
-                },
-                {
-                    'href': 'https://github.com/MarxAndEngels/nuxt-laravel-jwt2',
-                'img': 'b',
-                'title': 'Nuxt+Laravel+JWT (backend git)',
-                'description': 'Работа с авторизацией JWT, ссылка на гит (backend git)',
-                'skills': {'laravel': 'danger','jwt': 'dark','git':'yes'}
-                },
+                
 
                 {
                     'href': 'http://u92002uo.beget.tech/products/index',
@@ -28,13 +15,7 @@ let works=[
                 'description': 'Работа с магазином на чистом Laravel, более простая версия, которая может быть',
                 'skills': {'laravel': 'danger'}
                 },
-                {
-                    'href': 'https://next-shop-rouge.vercel.app',
-                'img': 'shop1',
-                'title': 'Next фронт для интернет-магазина',
-                'description': 'За один день написанный фронт для простого интернет-магазина',
-                'skills': {'next': 'dark','react': 'primary', 'redux': 'info'}
-                },
+               
                 {
                     'href': 'https://expo.dev/@admin1232131243fd/happy-birthday',
                 'img': 'rn',
@@ -76,6 +57,28 @@ let works=[
                 'title': 'Интернет-магазин',
                 'description': 'Работа в команде для фронтендерской части',
                 'skills': {'nuxt': 'success','vue': 'success','vuex': 'success' }
+                },
+
+                {
+                    'href': 'https://next-shop-rouge.vercel.app',
+                'img': 'shop1',
+                'title': 'Next фронт для интернет-магазина',
+                'description': 'За один день написанный фронт для простого интернет-магазина',
+                'skills': {'next': 'dark','react': 'primary', 'redux': 'info'}
+                },
+                {
+                    'href': 'https://github.com/MarxAndEngels/nuxt-laravel-jwt',
+                'img': 'f',
+                'title': 'Nuxt+Laravel+JWT (frontend git)',
+                'description': 'Работа с авторизацией JWT, ссылка на гит (frontend git)',
+                'skills': {'nuxt': 'success','vue': 'success','jwt': 'dark','git':'yes' }
+                },
+                {
+                    'href': 'https://github.com/MarxAndEngels/nuxt-laravel-jwt2',
+                'img': 'b',
+                'title': 'Nuxt+Laravel+JWT (backend git)',
+                'description': 'Работа с авторизацией JWT, ссылка на гит (backend git)',
+                'skills': {'laravel': 'danger','jwt': 'dark','git':'yes'}
                 },
                 {
                     'href': 'https://github.com/MarxAndEngels/myportfolio',
